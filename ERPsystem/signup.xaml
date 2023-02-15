@@ -1,0 +1,33 @@
+﻿<Window x:Name="signuppage" x:Class="ERPsystem.signup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ERPsystem"
+        mc:Ignorable="d"
+        Title="ERBsystem" Height="450" Width="800" Background="{x:Null}" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FF5677BB" Offset="0.585"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Label  Background="{x:Null}" Foreground="White" Content="sign up" HorizontalAlignment="Left" Margin="335,209,0,0" VerticalAlignment="Top" Width="106" Height="56" FontSize="30" FontFamily="Comic Sans MS">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="emaillable" Content="Email" HorizontalAlignment="Left" Margin="263,286,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="emailbox" HorizontalAlignment="Left" Height="23" Margin="308,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="registerBtn" Content="Register Now" HorizontalAlignment="Left" Margin="335,331,0,0" VerticalAlignment="Top" Width="116" FontFamily="Comic Sans MS" Background="#FF6189C3" Foreground="White" FontSize="14" BorderBrush="White" Click="RegisterBtn_Click"/>
+        <Button x:Name="GoToLoginBtn" Content="go to login" HorizontalAlignment="Left" Margin="335,374,0,0" VerticalAlignment="Top" Width="116" FontFamily="Comic Sans MS" Background="#FF6189C3" Foreground="White" FontSize="14" BorderBrush="White" Click="GoToLoginBtn_Click"/>
+        <Label  Background="{x:Null}" Foreground="White" Content="ERBsystem" HorizontalAlignment="Left" Margin="263,55,0,0" VerticalAlignment="Top" Width="277" Height="90" FontSize="50" FontFamily="Comic Sans MS">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+
+    </Grid>
+</Window>
